@@ -1,4 +1,4 @@
-# Buffer Overflow Attempt Spring '24:
+# Buffer Overflow Spring '24:
 
 Linux Distribution:	Ubuntu 8.10  
 Architecture:		x86
