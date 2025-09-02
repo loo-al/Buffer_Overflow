@@ -1,6 +1,6 @@
 # Buffer Overflow Attempt Spring '24:
 
-Linux Distribution:	Ubuntu 8.10 
+Linux Distribution:	Ubuntu 8.10  
 Architecture:		x86
 
 ## 1st Attempt (unsuccessful)
