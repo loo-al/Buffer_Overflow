@@ -3,11 +3,11 @@
 Linux Distribution:	Ubuntu 8.10 
 Architecture:		x86
 
-## 1st Attempt (not successful)
+## 1st Attempt (unsuccessful)
 Using the code from exploit iv in smash the stack didn't yield any success.
 ![first_attempt](not_work.png)
 
-## 2nd Attempt (not sucessful)
+## 2nd Attempt (unsucessful)
 I referenced an online guide.  And did the following:
 
 Disabling the ASLR:
@@ -16,7 +16,8 @@ Disabling the ASLR:
 Stepping into the vuln.c to find the return address and the adress of the buffer:
 ![stepping](step_in_gdb.png)
 
-Although I didn't get root access, I was able to overflow the buffer:
+## 3rd Attempt (successful)
+Despite not gaining root access, I was able to overflow the buffer:
 ![overflow](seg_fault.png)
 
 I successfully removed the aslr randomization, but wasn't able to gain root access.
