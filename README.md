@@ -17,11 +17,14 @@ Using the code from exploit iv in smash the stack didn't yield any success.
 
 In another attempt I tired the following:
 
-* Disabling the ASLR:
+* Disabling the ASLR
   
 ![disable](disable_aslr.png)
 
-Stepping into the vuln.c to find the return address and the adress of the buffer:
+* Stepping into the vuln.c
+* Locate the return address
+* Find the adress of the buffer
+  
 ![stepping](step_in_gdb.png)
 
 ## 3rd Attempt (successful)
