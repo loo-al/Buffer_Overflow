@@ -3,8 +3,8 @@
 Linux Distribution:	Ubuntu 8.10
 Architecture:		x86
 
-This is a Buffer overflow simulation contained in a sandboxed environment.  As this simulation was conducted in a virtual machine,
-no harm was done to another.
+This is a Buffer overflow simulation contained in a sandboxed environment.  
+As this simulation was conducted in a virtual machine, no harm was done to another.
 
 ## 1st Attempt (unsuccessful)
 
