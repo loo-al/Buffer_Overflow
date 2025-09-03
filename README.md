@@ -28,14 +28,17 @@ In another attempt I tired the following:
 ![stepping](step_in_gdb.png)
 
 ## 3rd Attempt (successful)
-Despite not gaining root access, I was able to overflow the buffer:
+Despite not gaining root access, I was able to overflow the buffer.
+
 ![overflow](seg_fault.png)
 
 I successfully removed the aslr randomization, but wasn't able to gain root access.
+
 ![root](no_root.png)
 
+The buffer overflow in apparent from the segmentation fault.
 
-When calculating the offsets the return address minus the buffer adress was 0xbff5c338 - 0xbff5c2d0 = 104.
+When calculating the offsets the return address minus the buffer adress was 0xbff5c338 - 0xbff5c2d0 = 104.  
 Adding 104 + 4 = 108, should give access to the return address pointer and hijack it.
 
 Adding 200-300 more to ebp will over over flow the buffer into arbitrary code execution in the stack, found in exploit.c file.
