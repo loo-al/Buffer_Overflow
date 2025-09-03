@@ -18,6 +18,7 @@ Using the code from exploit iv in smash the stack didn't yield any success.
 In another attempt I tired the following:
 
 * Disabling the ASLR:
+  
 ![disable](disable_aslr.png)
 
 Stepping into the vuln.c to find the return address and the adress of the buffer:
