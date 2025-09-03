@@ -1,6 +1,7 @@
 # Buffer Overflow Spring '24:
 
 Linux Distribution:	Ubuntu 8.10  
+Software:           VirtualBox  
 Architecture:		    x86  
 
 This is a Buffer overflow simulation contained in a sandboxed environment.  
