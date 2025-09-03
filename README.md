@@ -41,7 +41,7 @@ The buffer overflow in apparent from the segmentation fault.
 When calculating the offsets the return address minus the buffer adress was 0xbff5c338 - 0xbff5c2d0 = 104.  
 Adding 104 + 4 = 108, should give access to the return address pointer and hijack it.
 
-Adding 200-300 more to ebp will over over flow the buffer into arbitrary code execution in the stack, found in exploit.c file.
+Adding 200-300 more to ebp will overflow the buffer into arbitrary code execution in the stack, found in exploit.c file.
 That calculation was 0xbff5c338 + 200 in the hex calculator, yielding 0xbff5c400.  (this was adding 200)
 
 On the latest attempt my steps were as follows in the same terminal:
