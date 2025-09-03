@@ -8,7 +8,7 @@ no harm was done to another.
 
 ## 1st Attempt (unsuccessful)
 
-Below is the first attempt to find the beginning of of the buffer in memory. 
+Below is the first attempt to find the beginning of of the buffer in memory.  
 Using the code from exploit iv in smash the stack didn't yield any success.
 
 ![first_attempt](not_work.png)
